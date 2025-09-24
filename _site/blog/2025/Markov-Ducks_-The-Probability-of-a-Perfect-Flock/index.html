@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      Markov Ducks: The Probability of a Perfect Flock | Alexander E. Cohen
+    
+  
+</title>
+<meta name="author" content="Alexander E. Cohen">
+<meta name="description" content="A mathematical journey into collecting ducks. Written by Alex Cohen and Nikhil Gupta.">
+
+  <meta name="keywords" content="personal website">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+
+
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico?2ad0ae030e07577fa06cae2dd8dee54a">
+
+<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="http://0.0.0.0:8080/blog/2025/Markov-Ducks_-The-Probability-of-a-Perfect-Flock/">
+
+
+  <!-- Dark Mode -->
+  <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script>
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/">
+          
+            
+              <span class="font-weight-bold">Alexander</span>
+            
+            
+              <span class="font-weight-bold">E.
+            
+              <span class="font-weight-bold">Cohen
+          
+        </span></span></a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">About
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/publications/">Publications
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/research_pictures/">Research Pictures
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="/blog/">Blog
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/assets/pdf/aecohen_cv.pdf">CV
+                    
+                  </a>
+                </li>
+              
+            
+          
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+
+
+
+
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Markov Ducks: The Probability of a Perfect Flock</h1>
+    <p class="post-meta">
+      Created on March 29, 2025
+      
+      
+      
+    </p>
+    <p class="post-tags">
+      
+        <a href="/blog/2025"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </a>
+      
+      
+          ·  
+        
+          
+            <a href="/blog/tag/probability"> <i class="fa-solid fa-hashtag fa-sm"></i> probability</a>
+          
+          
+        
+      
+
+      
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p>Written by <a href="https://www.linkedin.com/in/alexander-e-cohen/" rel="external nofollow noopener" target="_blank">Alex Cohen</a> and <a href="https://www.linkedin.com/in/nikhil-z-gupta-703271175/" rel="external nofollow noopener" target="_blank">Nikhil Gupta</a>.</p>
+
+<p>One of the most iconic parts of the APS Global Physics Summit is the chance to win a <em>Physical Review</em> journal duck. 
+At the career fair, APS hosts the duck giveaway, where attendees spin a wheel to win one of 12 unique ducks, each themed after a different <em>Physical Review</em> journal.</p>
+
+<p align="center">
+  <img src="/assets/img/duck_wheel.png" alt="Duck Wheel" width="600">
+  <br>
+  <em>Duck wheel (left) and close-up of the best duck (right).</em>
+</p>
+
+<p>On <a href="https://www.instagram.com/aps.physics/reel/DHUmrSKiLde/" rel="external nofollow noopener" target="_blank">their instagram page</a>, APS presented us with a challenge: “Can you collect ‘em all?”. 
+After the thrill of spinning the wheel and winning our very first ducks, that is exactly what we sought to do. 
+Our first instinct was to jump back in line and continue waiting our turn for more spins.
+However, with all the interesting talks going on at the conference (and the fact that our advisors didn’t exactly send us there to start a duck collection), we couldn’t justify the uncertainty of potentially waiting in line for hours to complete our duck portfolio. 
+So, we needed to know: how long should we expect it to take to collect all of the ducks?</p>
+
+<p align="center">
+  <img src="/assets/img/nikhil_spinning.png" alt="Nikhil Spinning" width="400">
+  <br>
+  <em>Nikhil spinning the wheel, hoping for a new duck to add to his collection.</em>
+</p>
+
+<p>Since we are scientists, we went about answering this question methodically, first by developing an analytical model that describes our system and then collecting data to verify our results.
+While there are many ways to solve this classic problem (known as the <a href="https://en.wikipedia.org/wiki/Coupon_collector%27s_problem" rel="external nofollow noopener" target="_blank">coupon collector’s problem</a>), we decided to use a fun method that, while not the simplest, is general enough to answer many variants of the problem and introduces many interesting mathematical concepts.</p>
+
+<p>In the pursuit of forming a complete duck set, there is just one essential thing that you need to keep track of: how many unique ducks you have collected. 
+We will refer to this number as our state: if we are in state $N$, we have collected $N$ unique ducks. 
+The state we are in after $X+1$ spins depends only on the state we are in after $X$ spins. In other words, your next state only depends solely on your current state. 
+This type of system is known as a Markov chain.</p>
+
+<p>Let’s start by considering a simplified case: a wheel with only 3 ducks. 
+Before our first spin, we start in state 0, a reflection of our duck-less collection.
+At this point, we spin the wheel and are guaranteed to collect a new duck, moving us into state 1. 
+On the next spin, we have a $\frac{1}{3}$ chance of remaining in state 1 and a $\frac{2}{3}$ chance of spinning a new duck that we have not collected before, which would enter us into state 2. 
+Note that there is no chance of returning to state 0-no one will steal our beloved duck from us!
+Finally, once we enter state 2, we have a $\frac{2}{3}$ chance of remaining in state 2 and a $\frac{1}{3}$ chance of moving to state 3, in which we have completed our duck collection!</p>
+
+<p>This Markov process can be depicted graphically, where the nodes of the graph represent the state and the directed edges (arrows) of the graph represent the probability of transitioning from one state to another.</p>
+
+<p align="center">
+  <img src="/assets/img/markov_duck_3.png" alt="Markov Duck 3" width="600">
+  <br>
+  <em>Markov model of the three duck wheel.</em>
+</p>
+
+<p>Now, to estimate the expected number of spins needed to collect all of the ducks, we need to estimate the expected number of steps required to move from state 0 to state 3 in the Markov chain. 
+We will denote the expected number of steps to move from state $i$ to state $j$ in the Markov chain as $E(i \rightarrow j)$. 
+We note that $E(i \rightarrow i) = 0$ since we don’t need any spins to get to the state we are already in.</p>
+
+<p>As mentioned earlier, after the first spin, we are guaranteed to be in state 1, allowing us to simplify our problem to $E(0 \rightarrow 3) = 1 + E(1 \rightarrow 3)$, leaving us to solve for $E(1 \rightarrow 3)$.</p>
+
+<p>Once in state 1, we know that a spin has a $\frac{1}{3}$ chance of keeping us in state 1 and a $\frac{2}{3}$ chance of progressing us to state 2. 
+If we spin and remain in state 1, then our expected number of spins to get to the end will remain $E(1 \rightarrow 3)$. 
+However, if we spin and get to state 2, then our remaining expected number of spins to collect all the ducks becomes $E(2 \rightarrow 3)$. 
+Thus, we can write:</p>
+
+\[E(1 \rightarrow 3) = \frac{1}{3} (1 + E(1 \rightarrow 3)) + \frac{2}{3} (1 + E(2 \rightarrow 3)).\]
+
+<p>We can rearrange this equation to get $E(1 \rightarrow 3) = \frac{3}{2} + E(2 \rightarrow 3)$.</p>
+
+<p>By the same logic, we can solve for $E(2 \rightarrow 3)$ using the following equation:</p>
+
+\[E(2 \rightarrow 3) = \frac{2}{3} (1+E(2 \rightarrow 3)) + \frac{1}{3} (1+E(3 \rightarrow 3)),\]
+
+<p>which we can once again rearrange to get $E(2 \rightarrow 3) = 3 + E(3 \rightarrow 3)$.</p>
+
+<p>To make things more clear, let us rewrite these equations in reverse order:</p>
+
+\[\begin{array}{rcl}
+E(3 \rightarrow 3) &amp;=&amp; 0 \\
+E(2 \rightarrow 3) &amp;=&amp; 3 + E(3 \rightarrow 3) \\
+E(1 \rightarrow 3) &amp;=&amp; 3/2 + E(2 \rightarrow 3) \\
+E(0 \rightarrow 3) &amp;=&amp; 1 + E(1 \rightarrow 3)
+\end{array}\]
+
+<p>Here, it becomes clear we can solve for $E(0 \rightarrow 3)$ recursively, simply by plugging in the result from the line above into the line below repeatedly until we get a value for $E(0 \rightarrow 3)$.
+If we do this process, we find that  is $E(0 \rightarrow 3) = 5.5$, indicating that we should expect to spin the wheel 5 or 6 times to collect all three ducks.</p>
+
+<p>This is great for our simplified wheel case, but in reality there are 12 ducks that we need to collect! 
+We could repeat this process for a bigger Markov chain, but that would become very time-consuming, especially with the anticipated growth of the <em>Physical Review</em> duck community in the coming years.
+So, let’s see if we can spot any patterns and derive a general formula for any number of ducks!</p>
+
+<p>To generalize, let’s say that there are $N$ ducks. 
+Once again, we are guaranteed to get a new duck on the first spin. 
+Now, on the second spin, there is a $\frac{1}{N}$ chance of landing on the same duck you already have, thus remaining in state 1, and a $\frac{N-1}{N}$ chance of spinning a new duck and moving to state 2. 
+Similarly, once you get two ducks, when you spin next, there is a $\frac{2}{N}$ chance of getting one of the two ducks you already have and a $\frac{N-2}{N}$ chance of getting a new duck to move to state 3. 
+This pattern keeps repeating itself, until we have collected every duck except one. 
+At this point, we are in state $N-1$, and, on the next spin, there will be a $\frac{N-1}{N}$ chance of spinning a duck we already have and a $\frac{1}{N}$ chance of spinning the final duck that we don’t have yet. Once again, this process can be graphically visualized as a Markov chain.</p>
+
+<p align="center">
+  <img src="/assets/img/markov_duck_N.png" alt="Markov Duck 3" width="800">
+  <br>
+  <em>Markov model of the N duck wheel.</em>
+</p>
+
+<p>Now, using the same logic that we used for the 3 duck case, we see that</p>
+
+\[\begin{array}{rcl}
+E(0 \rightarrow N) &amp;=&amp; 1 + E(1 \rightarrow N) \\
+E(1 \rightarrow N) &amp;=&amp; \frac{1}{N} (E(1 \rightarrow N) + 1) + \frac{N-1}{N} (E(2 \rightarrow N) + 1) \\
+E(2 \rightarrow N) &amp;=&amp; \frac{2}{N} (E(2 \rightarrow N) + 1) + \frac{N-2}{N} (E(3 \rightarrow N) + 1) \\
+&amp;...&amp; \\
+E(N-1 \rightarrow N) &amp;=&amp; \frac{N-1}{N} (E(N-1 \rightarrow N) + 1) + \frac{N}{N} (E(N \rightarrow N) + 1)
+\end{array}\]
+
+<p>Once again, we can rearrange all of these equations and write them in the opposite order (you should try this on your own) to get:</p>
+
+\[\begin{array}{rcl}
+E(N \rightarrow N) &amp;=&amp; 0 \\
+E(N-1 \rightarrow N) &amp;=&amp; \frac{N}{1} + E(N \rightarrow N) \\
+E(N-2 \rightarrow N) &amp;=&amp; \frac{N}{2} + E(N-1 \rightarrow N) \\
+&amp;...&amp; \\
+E(2 \rightarrow N) &amp;=&amp; \frac{N}{N-2} + E(3 \rightarrow N) \\
+E(1 \rightarrow N) &amp;=&amp; \frac{N}{N-1} + E(2 \rightarrow N) \\
+E(0 \rightarrow N) &amp;=&amp; 1 + E(1 \rightarrow N)
+\end{array}\]
+
+<p>Now we are getting somewhere! We can now see that $E(x \rightarrow N) = \frac{N}{N-x} + E(x+1 \rightarrow N)$ when $x &lt; N$ and $E(N \rightarrow N) = 0$. Our $E(x \rightarrow N)$ equation gives us a relationship between each term in our sequence and the previous terms. This relationship is known as a <a href="https://en.wikipedia.org/wiki/Recurrence_relation" rel="external nofollow noopener" target="_blank">recurrence relation</a>.</p>
+
+<p>Thus, writing out the full series, we get</p>
+
+\[\begin{array}{rcl}
+E(0 \rightarrow N) &amp;=&amp; \frac{N}{1} + \frac{N}{2} + \frac{N}{3} + ... + \frac{N}{N-1} + \frac{N}{N} \\
+&amp;=&amp; N \bigg(1 + \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{N-1} + \frac{1}{N}\bigg)
+\end{array}\]
+
+<p>Plugging in $N=12$ into this formula gives $E(0 \rightarrow N) \approx 37.24$.</p>
+
+<p>In fact, the series $1 + \frac{1}{2} + \frac{1}{3} + … + \frac{1}{N-1} + \frac{1}{N}$ is known as the (truncated) harmonic series. The sum of these first $N$ terms of the harmonic series is known as the $N$th harmonic number. Thus, the expected number of spins to spin all $N$ unique ducks is $N$ times the $N$th harmonic number.</p>
+
+<p>After determining that each spin takes about 20 seconds, and that the line is usually 15 people long, each of us could spin the wheel once every 5 minutes. 
+Therefore, for each of us to collect every duck, it would take a little over 3 hours!</p>
+
+<p>While we didn’t have 3 hours to spare, we still wanted to run an experiment to see all this math manifested as expected in the real world.
+To do this, we stood nearby the spinning wheel and recorded all the ducks that were spun over the course of 67 consecutive spins.
+Although the wheel has 12 different ducks, we can group the ducks into 4 groups to get better statistics.
+For $N=4$, the expected number of spins is 8.33.
+By considering every possible way to form these 4 groups and recording the observed number of spins it took to collect all the duck pairs for each combination, we measured that it took an average of 8.31 spins to collect a duck from all 4 groups.
+Even with this small experimental sample size, this result closely matches the analytical result for $N=4$!</p>
+
+<p>To get a better idea of how this converges to the analytical result for larger data sets, we can also run computer simulations of this process. 
+In the plot below, I show the data collection results, the computer simulation results, and the analytical results.</p>
+
+<p align="center">
+  <img src="/assets/img/analysis.png" alt="Analysis" width="600">
+</p>
+
+<p>Our mathematical journey through the duck collection problem (classically known as the coupon collector’s problem) revealed that collecting all 12 ducks would require approximately 37 spins on average—equivalent to about 3 hours of dedicated duck hunting at the conference.
+This playful exploration demonstrates how mathematical modeling can help us make informed decisions, even for something as whimsical as collecting conference souvenirs. 
+Similar probability problems that can be tackled with this Markov modeling approach appear in many contexts in daily life beyond duck collecting and we hope this post provides you with a new way of thinking when you find yourself in a related scenario.</p>
+
+<p>So, can you collect ‘em all? Mathematically speaking, yes—but it might take longer than your conference schedule allows!</p>
+
+<!-- Add MathJax at the end of the post -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+
+<script type="text/javascript" id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+    
+      
+
+
+
+    
+  
+
+  
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+
+
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      
+  © Copyright 2025
+  Alexander
+  E.
+  Cohen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+
+  
+  
+    Last updated: September 24, 2025.
+  
+
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script>
+<script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+<!-- Badges -->
+
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+
+  <!-- MathJax -->
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+  
+    <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+  <!-- Scrolling Progress Bar -->
+  <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
+
+
+
+
+
+
+
+  <!-- Back to Top -->
+  <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
+    addBackToTop();
+  </script>
+
+
+
+
+
+
+  </body>
+</html>

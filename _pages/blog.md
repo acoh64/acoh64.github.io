@@ -1,9 +1,9 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: Blog
 nav: true
-nav_order: 1
+nav_order: 3
 pagination:
   enabled: true
   collection: posts
@@ -179,7 +179,7 @@ pagination:
 </div>
 
   <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
+    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: contain; width: 100%; height: auto" alt="image">
   </div>
 </div>
 {% endif %}
