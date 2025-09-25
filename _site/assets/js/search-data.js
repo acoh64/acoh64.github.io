@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Selected publications in reverse chronological order.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -35,7 +35,14 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/assets/pdf/aecohen_cv.pdf";
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-contact",
+          title: "Contact",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
           },
         },{id: "books-the-godfather",
           title: 'The Godfather',
@@ -54,8 +61,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-presented-at-the-aps-march-meeting-2023-in-las-vegas-on-learning-and-controlling-phase-separation-in-complex-geometries-with-differentiable-physics",
           title: 'I presented at the APS March Meeting 2023 in Las Vegas on learning...',
           description: "",
-          section: "News",},{id: "news-my-work-on-learning-physically-constrained-models-in-mode-space-for-biophysical-systeems-was-published-in-physical-review-letters-and-covered-by-the-popular-science-magazine-new-scientist",
-          title: 'My work on learning physically-constrained models in mode space for biophysical systeems was...',
+          section: "News",},{id: "news-my-work-on-learning-physically-constrained-models-in-mode-space-for-biophysical-systems-was-published-in-physical-review-letters-and-covered-by-the-popular-science-magazine-new-scientist",
+          title: 'My work on learning physically-constrained models in mode space for biophysical systems was...',
           description: "",
           section: "News",},{id: "news-i-presented-at-juliacon-2023-in-the-computational-biology-session-on-low-dimensional-mode-representataions-of-biological-systems",
           title: 'I presented at JuliaCon 2023 in the computational biology session on low-dimensional mode...',
@@ -63,11 +70,17 @@ ninja.data = [{
           section: "News",},{id: "news-our-work-on-learning-physics-from-images-for-lithium-ion-battery-materials-was-published-in-nature-and-covered-in-mit-news-and-slac-news",
           title: 'Our work on learning physics from images for lithium ion battery materials was...',
           description: "",
+          section: "News",},{id: "news-i-attended-the-international-institute-for-sustainability-with-knotted-chiral-meta-matter-winter-school-2024-and-presented-learning-models-for-undulatory-locomotion-in-animals",
+          title: 'I attended the International Institute for Sustainability with Knotted Chiral Meta Matter Winter...',
+          description: "",
           section: "News",},{id: "news-my-work-on-learning-low-dimensional-representations-and-probabilistic-models-for-c-elegans-neural-activity-locomotion-and-behavior-was-covered-in-mit-spectrum",
           title: 'My work on learning low dimensional representations and probabilistic models for C. elegans...',
           description: "",
-          section: "News",},{id: "news-i-attended-the-international-institute-for-sustainability-with-knotted-chiral-meta-matter-winter-school-2024-and-presented-learning-models-for-undulatory-locomotion-in-animals",
-          title: 'I attended the International Institute for Sustainability with Knotted Chiral Meta Matter Winter...',
+          section: "News",},{id: "news-i-gave-a-presentation-at-the-mit-computational-science-and-engineering-seminar-on-predicting-and-controlling-nonlinear-locomotion-dynamics-using-neural-activity",
+          title: 'I gave a presentation at the MIT Computational Science and Engineering seminar on...',
+          description: "",
+          section: "News",},{id: "news-i-gave-a-presentation-at-the-mit-computational-and-systems-biology-seminar-on-predicting-and-controlling-nonlinear-locomotion-dynamics-using-neural-activity",
+          title: 'I gave a presentation at the MIT Computational and Systems Biology seminar on...',
           description: "",
           section: "News",},{
       id: 'light-theme',

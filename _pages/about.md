@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <div style="text-align: center;">
-        <a href="/assets/pdf/aecohen_cv.pdf">CV</a> | <a href="https://scholar.google.com/citations?user=89drxM4AAAAJ&hl=en">Scholar</a>
+        <a href="/assets/pdf/aecohen_cv.pdf">CV</a> | <a href="https://scholar.google.com/citations?user=89drxM4AAAAJ&hl=en">Scholar</a> | <a href="https://www.linkedin.com/in/alexander-e-cohen/">LinkedIn</a>
     </div>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 10 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -34,4 +34,10 @@ I am excited about all things related to AI for science.
 
 I did my undergrad at the University of Chicago, where I started my research career at the [Pritzker School of Molecular Engineering](https://pme.uchicago.edu/) studying [liquid crystals](https://en.wikipedia.org/wiki/Liquid_crystal) and [conjugated polymers](https://en.wikipedia.org/wiki/Conductive_polymer) with Professor [Juan de Pablo](https://engineering.nyu.edu/faculty/juan-de-pablo).
 
+I have also learned a lot from two industry internships in recent years.
+At [IBM Research](https://research.ibm.com/), I worked on developing spintronic materials for applications in [racetrack memory](https://en.wikipedia.org/wiki/Racetrack_memory) for neuromorphic computing.
+At [Flagship Pioneering](https://www.flagshippioneering.com/), I worked on developing AI agents for automating genome-wide analysis in early stage drug discovery.
+
 Outside of research, I enjoy tennis, squash, hiking, triathlons, trivia, and almost all sports/games.
+
+
