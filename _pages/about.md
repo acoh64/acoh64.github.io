@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: AI for Science Researcher. PhD Student @ MIT <a href="https://cse.mit.edu//">CSE</a> + <a href="https://cheme.mit.edu//">ChemE</a>
+subtitle: AI for Science Researcher. PhD Student @ MIT <a href="https://cse.mit.edu//">CSE</a> + <a href="https://cheme.mit.edu//">ChemE</a>.
 
 profile:
   align: right
