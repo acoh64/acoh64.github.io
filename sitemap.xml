@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://0.0.0.0:8080/books/the_godfather/</loc>
-<lastmod>2025-09-25T19:49:02+00:00</lastmod>
+<lastmod>2025-10-03T16:42:52+00:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:8080/news/announcement_01/</loc>
@@ -53,6 +53,10 @@
 <lastmod>2025-03-29T00:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>http://0.0.0.0:8080/blog/2025/Data-Attribution-for-Diffusion-Models/</loc>
+<lastmod>2025-05-13T00:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>http://0.0.0.0:8080/</loc>
 </url>
 <url>
@@ -71,13 +75,19 @@
 <loc>http://0.0.0.0:8080/publications/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:8080/research_pictures/</loc>
+<loc>http://0.0.0.0:8080/research_gallery/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:8080/blog/2025/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:8080/blog/tag/probability/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/blog/tag/machine-learning/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/blog/tag/diffusion-models/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:8080/books/2025/</loc>

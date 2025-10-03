@@ -16,12 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-research-pictures",
-          title: "Research Pictures",
+        },{id: "nav-research-gallery",
+          title: "Research Gallery",
           description: "A collection of cool pictures from my research projects.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/research_pictures/";
+            window.location.href = "/research_gallery/";
           },
         },{id: "nav-blog",
           title: "Blog",
@@ -79,8 +79,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-gave-a-presentation-at-the-mit-computational-science-and-engineering-seminar-on-predicting-and-controlling-nonlinear-locomotion-dynamics-using-neural-activity",
           title: 'I gave a presentation at the MIT Computational Science and Engineering seminar on...',
           description: "",
-          section: "News",},{id: "news-i-gave-a-presentation-at-the-mit-computational-and-systems-biology-seminar-on-predicting-and-controlling-nonlinear-locomotion-dynamics-using-neural-activity",
-          title: 'I gave a presentation at the MIT Computational and Systems Biology seminar on...',
+          section: "News",},{id: "news-i-gave-an-invited-talk-at-the-mit-computational-and-systems-biology-seminar-on-predicting-and-controlling-nonlinear-locomotion-dynamics-using-neural-activity",
+          title: 'I gave an invited talk at the MIT Computational and Systems Biology seminar...',
           description: "",
           section: "News",},{
       id: 'light-theme',
