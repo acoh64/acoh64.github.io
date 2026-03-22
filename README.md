@@ -17,6 +17,12 @@ Personal website of Alexander E. Cohen, built with [Jekyll](https://jekyllrb.com
 2. Open https://localhost:8080 to view the site
 3. Ctrl+C to stop server once I am happy with everything
 4. `docker compose run --rm jekyll bundle exec jekyll build`
+5. `cp -r _site ../tmp`
+6. Switch to gh-pages-local: `git checkout gh-pages-local`
+7. `git rm -rf .`
+8. `git clean -fd`
+9. `cp -r /tmp/_site_build/* .`
+10. Commit and push site
 
 ## Prerequisites
 
