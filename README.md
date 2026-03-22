@@ -12,6 +12,12 @@ Personal website of Alexander E. Cohen, built with [Jekyll](https://jekyllrb.com
 | `gh-pages-local` | Compiled static HTML served by GitHub Pages. Never edit directly. |
 | `master` | Outdated (pre-redesign). Not actively used. |
 
+## Simple Instructions
+1. `docker compose up`
+2. Open https://localhost:8080 to view the site
+3. Ctrl+C to stop server once I am happy with everything
+4. `docker compose run --rm jekyll bundle exec jekyll build`
+
 ## Prerequisites
 
 ### Option A: Docker (recommended)

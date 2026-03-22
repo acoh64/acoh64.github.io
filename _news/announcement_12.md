@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I gave a presentation at the [Simple Person's Applied Math Seminar (SPAMS)](https://math.mit.edu/spams/schedule.html) on Predicting and controlling nonlinear locomotion dynamics using neural activity.
+I gave an invited talk at the [Simple Person's Applied Math Seminar (SPAMS)](https://math.mit.edu/spams/schedule.html) on Predicting and controlling nonlinear locomotion dynamics using neural activity.

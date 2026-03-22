@@ -82,6 +82,12 @@ ninja.data = [{
           section: "News",},{id: "news-i-gave-an-invited-talk-at-the-mit-computational-and-systems-biology-seminar-on-predicting-and-controlling-nonlinear-locomotion-dynamics-using-neural-activity",
           title: 'I gave an invited talk at the MIT Computational and Systems Biology seminar...',
           description: "",
+          section: "News",},{id: "news-i-gave-an-invited-talk-at-the-simple-person-s-applied-math-seminar-spams-on-predicting-and-controlling-nonlinear-locomotion-dynamics-using-neural-activity",
+          title: 'I gave an invited talk at the Simple Person’s Applied Math Seminar (SPAMS)...',
+          description: "",
+          section: "News",},{id: "news-i-gave-an-invited-talk-at-the-physics-of-living-systems-pls-short-talks-on-predicting-and-controlling-nonlinear-locomotion-dynamics-using-neural-activity",
+          title: 'I gave an invited talk at the Physics of Living Systems (PLS) Short...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
