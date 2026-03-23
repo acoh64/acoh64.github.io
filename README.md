@@ -18,11 +18,18 @@ Personal website of Alexander E. Cohen, built with [Jekyll](https://jekyllrb.com
 3. Ctrl+C to stop server once I am happy with everything
 4. `docker compose run --rm jekyll bundle exec jekyll build`
 5. `cp -r _site ../tmp`
-6. Switch to gh-pages-local: `git checkout gh-pages-local`
-7. `git rm -rf .`
-8. `git clean -fd`
-9. `cp -r /tmp/_site/* .`
-10. Commit and push site
+6. Commit and push code
+7. Switch to gh-pages-local: `git checkout gh-pages-local`
+8. `git rm -rf .`
+9. `git clean -fd`
+10. `cp -r ../tmp/_site/* .`
+11. `git add -A`
+12. `git commit -m "deploy: update site"`
+13. `git push origin gh-pages-local`
+14. Switch back to new-site: `git checkout new-site` 
+
+# 6. Switch back to the source branch
+git checkout new-site
 
 ## Prerequisites
 
