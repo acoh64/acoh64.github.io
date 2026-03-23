@@ -21,7 +21,7 @@ Personal website of Alexander E. Cohen, built with [Jekyll](https://jekyllrb.com
 6. Switch to gh-pages-local: `git checkout gh-pages-local`
 7. `git rm -rf .`
 8. `git clean -fd`
-9. `cp -r /tmp/_site_build/* .`
+9. `cp -r /tmp/_site/* .`
 10. Commit and push site
 
 ## Prerequisites
