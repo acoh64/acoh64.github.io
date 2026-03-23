@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://acoh64.github.io/books/the_godfather/</loc>
-<lastmod>2026-03-23T01:40:42+00:00</lastmod>
+<lastmod>2026-03-23T01:48:19+00:00</lastmod>
 </url>
 <url>
 <loc>https://acoh64.github.io/news/announcement_01/</loc>
@@ -53,6 +53,10 @@
 <lastmod>2025-05-07T00:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>https://acoh64.github.io/news/announcement_16/</loc>
+<lastmod>2025-10-15T00:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://acoh64.github.io/news/announcement_12/</loc>
 <lastmod>2025-11-20T00:00:00+00:00</lastmod>
 </url>
@@ -71,10 +75,6 @@
 <url>
 <loc>https://acoh64.github.io/news/announcement_15/</loc>
 <lastmod>2026-03-18T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://acoh64.github.io/news/announcement_16/</loc>
-<lastmod>2026-10-15T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://acoh64.github.io/blog/2025/Markov-Ducks_-The-Probability-of-a-Perfect-Flock/</loc>
