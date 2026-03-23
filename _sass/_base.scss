@@ -760,6 +760,12 @@ footer.sticky-bottom {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
         }
+
+        .press {
+          color: var(--global-highlight-color) !important;
+          border: 1px solid var(--global-highlight-color);
+          font-weight: bold;
+        }
       }
 
       .title {
@@ -810,6 +816,16 @@ footer.sticky-bottom {
         }
         a.award.btn {
           border-color: var(--global-highlight-color);
+        }
+        a.press.btn {
+          color: var(--global-highlight-color) !important;
+          border-color: var(--global-highlight-color);
+          font-weight: bold;
+
+          &:hover {
+            background-color: var(--global-highlight-color);
+            color: white !important;
+          }
         }
       }
 

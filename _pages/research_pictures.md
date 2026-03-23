@@ -30,6 +30,15 @@ sections:
         autoplay: true
         loop: true
         span: full
+      - path: assets/img/human_experiment_view_03.png
+        alt: Mosquito
+        caption: 3D rendering of mosquito experiments with a human in the chamber
+      - path: assets/img/human_experiment_view_07.png
+        alt: Mosquito
+        caption: 3D rendering of mosquito experiments with a human in the chamber
+      - path: assets/img/human_experiment_view_20.tiff
+        alt: Mosquito
+        caption: 3D rendering of mosquito experiments with a human in the chamber
   - title: Batteries
     images:
       - path: assets/img/battery1.jpg

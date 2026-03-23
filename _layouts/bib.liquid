@@ -187,6 +187,22 @@
 
     <!-- Links/Buttons -->
     <div class="links">
+      {% if entry.press %}
+        {% assign press_items = entry.press | split: '; ' %}
+        {% for press_item in press_items %}
+          {% if press_item contains '::' %}
+            {% assign press_parts = press_item | split: '::' %}
+            {% assign press_name = press_parts[0] | strip %}
+            {% assign press_url = press_parts[1] | strip %}
+          {% else %}
+            {% assign press_name = 'Press' %}
+            {% assign press_url = press_item | strip %}
+          {% endif %}
+          <a href="{{ press_url }}" class="press btn btn-sm z-depth-0" role="button">
+            <i class="fa-solid fa-newspaper"></i> {{ press_name }}
+          </a>
+        {% endfor %}
+      {% endif %}
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
